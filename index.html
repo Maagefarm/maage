@@ -4,27 +4,25 @@
                 <head>
                         <link rel="stylesheet" href="style.css">
                         <title>Gutta Minecraft</title>
-                        <h1 face="Arial" align="center">
-                                <font face="Arial">
+                        <h1 face="Arial" align="center"> <br>
                                 Gutta
-                        </h1>
+                        </h1> <br>
+                        <p style="text-align: center;">
+                                <font size="3" face="Arial">
+                                        <strong>Velkommen til Gutta!</strong>
+                                </p> <br>
                 </head>
         </body>
-        <body>
-                <p style="text-align: center;">
-                <font size="3" face="Arial">
-                        <strong>Velkommen til Gutta!</strong>
-                </p>
 
                 <div>
-                <form action="index.php" method="POST">
+                <form onsubmit="console.log(username + password)" action="index.html"  method="POST">
                 <p style="text-align: center;">
 
                         <label for="username">Brukernavn:</label>
-                        <input type="text" id="username" required placeholder="Brukernavn"> <br>
+                        <input type="text" id="username" required placeholder="Brukernavn"> <br> <br>
 
                         <label for="password">Passord:</label>
-                        <input type="password" id="password" required placeholder="Passord"> <br>
+                        <input type="password" id="password" required placeholder="Passord"> <br> <br>
 
                         <input type="reset"> <br>
                         <input type="submit"> <br>
@@ -33,5 +31,11 @@
                 </div>
 
                 </form>
-        </body>
+
+                <script type="text/javascript">
+
+                        var username = document.getElementById("username");
+                        var password = document.getElementById("password");
+                                
+                </script>
 </html>
